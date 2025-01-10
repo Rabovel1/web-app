@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Please ensure to read this Readme file carefully
+
+Every developer should create his own branch and work on it before merging it to the main branch.
 
 ## Getting Started
 
