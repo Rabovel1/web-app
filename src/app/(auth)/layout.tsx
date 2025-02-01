@@ -1,6 +1,6 @@
 import AuthNav from '@/components/shared/auth/authNav'
 import SectionWrapper from '@/components/shared/sectionWrapper'
-import Image from 'next/image'
+
 import React, { ReactNode } from 'react'
 
 const layout = ({ children }: { children: ReactNode }) => {
@@ -8,7 +8,7 @@ const layout = ({ children }: { children: ReactNode }) => {
         <SectionWrapper className='p-0 relative'>
 
 
-            <AuthNav page="LOGIN" className=' fixed w-full top-4' />
+            <AuthNav page="LOGIN" className='fixed w-full top-0  z-10 ' />
 
 
             {children}

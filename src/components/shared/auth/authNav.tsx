@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
+import MaxWidthWrapper from '../maxWidthWrapper';
 
 interface AuthNavProps {
     className?: string;
@@ -9,8 +10,8 @@ interface AuthNavProps {
 
 const AuthNav: React.FC<AuthNavProps> = ({ className, page }) => {
     return (
-        <div className={`w-full flex justify-between items-center ${className}`}>
-            <Image src={page === "REGISTER" ? "/assets/logo.png" : "/assets/logo_blue.png"} alt="Logo" width={40} height={40} />
+        <MaxWidthWrapper className={`w-full py-4 flex justify-between items-center ${className}`}>
+            <Image src={page === "REGISTER" ? "/assets/logo.png" : "/assets/logo_blue.png"} alt="Logo" width={148} height={148} />
 
             <p>
                 {page === "LOGIN" ? "Don't have an account?" : "Already have an account?"}
@@ -18,7 +19,7 @@ const AuthNav: React.FC<AuthNavProps> = ({ className, page }) => {
                     {page === "LOGIN" ? "Sign Up" : "Sign In"}
                 </Link>
             </p>
-        </div>
+        </MaxWidthWrapper>
     )
 }
 
