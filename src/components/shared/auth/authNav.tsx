@@ -5,7 +5,7 @@ import MaxWidthWrapper from '../maxWidthWrapper';
 
 interface AuthNavProps {
     className?: string;
-    page: "LOGIN" | "REGISTER";
+    page: "LOGIN" | "REGISTER" | string;
 }
 
 const AuthNav: React.FC<AuthNavProps> = ({ className, page }) => {

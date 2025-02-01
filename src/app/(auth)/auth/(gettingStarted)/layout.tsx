@@ -1,8 +1,8 @@
-import SectionWrapper from '@/components/shared/sectionWrapper';
 import Image from 'next/image';
 import React, { ReactNode } from 'react';
 
 const layout = ({ children }: { children: ReactNode }) => {
+
     return (
         <div className="min-h-screen flex relative">
             {/* Left Section */}
@@ -28,7 +28,7 @@ const layout = ({ children }: { children: ReactNode }) => {
                 <div className="text-white/60 text-sm text-center">© 2024 Rabovel</div>
             </div>
 
-            <div>{children}</div>
+            <div className='flex items-center justify-center flex-col w-full'>{children}</div>
         </div>
     );
 };
